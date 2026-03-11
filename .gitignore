@@ -1,0 +1,21 @@
+# ROS build files
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Models / weights
+*.pt
+
+# ROS bags
+*.bag
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.swp
+*.so
