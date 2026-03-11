@@ -59,24 +59,31 @@ Published Topics:
 
 ---
 
-## 📦 Installation
+## 📦 Installation 
 
-### Clone Repository
+## Clone Repository
 
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/ARUN-KUMAR-86/ROS2-Intelligent-Vision-Perception-System.git
 
-Build Workspace
+## ▶️ How to Build, Run and Visualize
 
+# Build Workspace
 cd ~/ros2_ws
 colcon build
 source install/setup.bash
 
-Run Project
-
+# Run Project
 ros2 launch ros_camera_vision vision_launch.py
 
-👁️ Visualize Output
-
-rqt → Plugins → Visualization → Image View
+# Visualize Output
+rqt
+# Then go to: Plugins → Visualization → Image View
+# Select topics like:
+# /camera/image_raw
+# /vision/histogram
+# /vision/denoise
+# /vision/edges
+# /vision/tracking
+# /vision/yolo
