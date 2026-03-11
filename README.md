@@ -1,48 +1,82 @@
-⭐ ROS2 Intelligent Vision Perception System
+# 🚀 ROS2 Intelligent Vision Perception System
 
-Real-time robotics vision pipeline built using ROS2 + OpenCV + YOLOv8.
+A real-time robotics vision pipeline developed using **ROS2, OpenCV and YOLOv8** for intelligent perception tasks.
 
-🔥 Features
+This project demonstrates a **multi-stage computer vision architecture** capable of performing classical image processing and deep learning-based object detection simultaneously.
 
-Live Camera Streaming using ROS2
+---
 
-Histogram Colour Analysis
+## 📌 Project Overview
 
-Image Denoising Pipeline
+The system captures live video from a camera, processes frames through multiple vision modules, and publishes processed outputs on separate ROS topics for visualization and integration with robotic systems.
 
-Edge Detection Module
+This architecture can be extended for:
 
-Face Detection System
+- Autonomous navigation
+- Object tracking robots
+- Surveillance robotics
+- Warehouse automation
+- Human-robot interaction systems
 
-YOLOv8 Object Detection
+---
 
-Multi-topic ROS Vision Architecture
+## 🔥 Features
 
-Real-time FPS Monitoring
+✅ Live camera streaming using ROS2  
+✅ Histogram colour analysis  
+✅ Image denoising pipeline  
+✅ Edge detection module  
+✅ Face detection using Haar Cascade  
+✅ Deep learning object detection using YOLOv8  
+✅ Multi-topic ROS2 communication architecture  
+✅ Real-time FPS performance monitoring  
 
-📡 Published Topics
+---
 
-/camera/image_raw
+## 🧠 Vision Processing Pipeline
 
-/vision/histogram
 
-/vision/denoise
+Published Topics:
 
-/vision/edges
+- `/camera/image_raw`
+- `/vision/histogram`
+- `/vision/denoise`
+- `/vision/edges`
+- `/vision/tracking`
+- `/vision/yolo`
 
-/vision/tracking
+---
 
-/vision/yolo
+## ⚙️ System Requirements
 
-⚙️ Run Instructions
+- Ubuntu 24.04
+- ROS2 Jazzy
+- Python 3.12
+- OpenCV
+- cv_bridge
+- Ultralytics YOLOv8
+- NumPy 1.26
+
+---
+
+## 📦 Installation
+
+### Clone Repository
+
+```bash
+cd ~/ros2_ws/src
+git clone https://github.com/ARUN-KUMAR-86/ROS2-Intelligent-Vision-Perception-System.git
+
+Build Workspace
 
 cd ~/ros2_ws
 colcon build
 source install/setup.bash
+
+Run Project
+
 ros2 launch ros_camera_vision vision_launch.py
 
-👁️ View Outputs
-
-Use:
+👁️ Visualize Output
 
 rqt → Plugins → Visualization → Image View
