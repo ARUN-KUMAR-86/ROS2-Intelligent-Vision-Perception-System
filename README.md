@@ -4,6 +4,7 @@ A real-time robotics vision pipeline developed using **ROS2, OpenCV and YOLOv8**
 
 This project demonstrates a **multi-stage computer vision architecture** capable of performing classical image processing and deep learning-based object detection simultaneously.
 
+https://youtu.be/dHk2BOOtU0w
 ---
 
 ## 📌 Project Overview
